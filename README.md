@@ -2,8 +2,10 @@
 
 This script looks for Sigcheck.exe in $ENV:PATH
 
-Sigcheck-Processes.ps1 returns output from Get-Process 
+Sigcheck-Processes.ps1 by default returns output from Get-Process 
 and pipes it to the Sysinternals Sigcheck.exe utility.
+
+To get data on all processes run an elevated Powershell Prompt (Right-click Run As Administrator)
 
 "Sigcheck is a command-line utility that shows file version number, timestamp information, 
 and digital signature details, including certificate chains. It also includes an option to 
@@ -43,7 +45,7 @@ VT link         : 0|56
 
 ## [Examples]
 
-#####This will return Sigcheck output for all processes
+#####This will return Sigcheck output for all running processes
 
 ```Powershell
 .\Sigcheck-Processes.ps1
