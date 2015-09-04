@@ -46,7 +46,7 @@ $currentuser = [Security.Principal.WindowsIdentity]::GetCurrent()
 $IsAdmin = (New-Object Security.Principal.WindowsPrincipal $currentuser).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
 if ($IsAdmin -eq $false) {write-host "WARNING: Running as limited user, for complete results run the function as an Administrator." -ForegroundColor Yellow -BackgroundColor Black}
 
-$header = "Path","Verified","Date","Publisher","Description","Product","Product Version","File Version","Machine Type","Binary Version","Original Name","Internal Name","Copyright","Comments","Entropy","MD5","SHA1","PESHA1","PESHA256","SHA256","VT detection","VT link"
+$header = "Path","Verified","Date","Publisher","Description","Product","Product Version","File Version","Machine Type","Binary Version","Original Name","Internal Name","Copyright","Comments","Entropy","MD5","SHA1","PESHA1","PESHA256","SHA256","IMP","VT detection","VT link"
 
 
 
